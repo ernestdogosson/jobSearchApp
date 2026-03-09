@@ -9,7 +9,8 @@
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
-    "types": [],
+    "types": ["node"],
+
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -41,4 +42,6 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
   },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "eslint.config.*"],
 }
